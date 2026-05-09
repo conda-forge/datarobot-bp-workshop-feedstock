@@ -1,13 +1,13 @@
 {% set name = "datarobot-bp-workshop" %}
-{% set version = "0.2.6" %}
+{% set version = "0.2.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/datarobot-bp-workshop-{{ version }}.tar.gz
-  sha256: 355697622e833de63008bc0b7470f37081601d2b3c46ecd8aa4471da1806a8b1
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 31e3124c09622f837edcb707933d2fbb8b783e198f7938f62e5e4a5b52223b79
 
 build:
   noarch: python
